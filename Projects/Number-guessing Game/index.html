@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 04</title>
+    <script src="script.js" defer></script>
+    <style>
+        body{
+            background-color: rgb(184, 208, 228);
+        }
+        #heading{
+            background-color: rgb(65, 68, 70);
+            color: rgb(255, 0, 47);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #number{
+            height:30px;
+            width:200px;
+            box-shadow: 4px 10px 10px black;
+            background-color: rgb(102, 255, 230);
+            color: rgb(255, 0, 238);
+            border: 3px solid black;
+            border-radius: 20px;
+        }
+        input[type="submit"] {
+            background-color: #ffdd02;
+            border: none;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 5px;
+            box-shadow:
+                inset 2px 2px 5px #ffffff,   /* top-left highlight */
+                inset -2px -2px 5px #a3a3a3; /* bottom-right shadow */
+            cursor: pointer;
+}      
+.attempts{
+    border: 2px solid black;
+    display: inline-block;
+    border: 4px solid #333;
+    padding: 4px 8px;
+
+}
+    </style>
+</head>
+<body style="text-align: center;">
+<form>
+    <h1 id="heading"> NUMBER GUESSING GAME</h1>
+    <p>Guess a number between 1 and 100</p>
+    <p class="lastGuess">Last Guess:<span>0</span></p>
+    <br>
+    <input type="text" id="number">
+    <br>
+    <br>
+    <br>
+    <input type="submit" class="submit" value="Submit Guess">
+    <br>
+    <br>
+    <br>
+    <h2 class="attempts"> Guess Attempts: 0</h2>
+    <p class="lowOrHigh"></p>
+</form>
+</body>
+</html>
