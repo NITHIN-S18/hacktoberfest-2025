@@ -1,0 +1,366 @@
+:root{
+    --primary:#1A154E;
+    --secondary:#FFCA3E;
+    --prim_acc: #c3c2ff;
+    --sec_acc: #fff0bf ;
+}
+
+/* Abril Fatface with Sparkling Effects */
+.abril-fatface-sparkle {
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--primary); /* Vibrant yellow */
+  text-shadow: 
+    0 0 10px #1A154Eb3, /* Inner glow */
+    0 0 20px #1A154E66, /* Outer glow */
+    2px 2px 4px #fff0bf4d; /* Navy blue depth */
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #fff0bf 30%, transparent 70%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+}
+
+/* Animation for twinkling effect */
+@keyframes sparkle {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 1; text-shadow: 0 0 15px #1A154Eb3, 0 0 30px #1A154Eb9; }
+}
+
+body{
+    /* border: 5px solid black; */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family:"Tektur", serif;
+    color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--prim_acc) ;
+}
+
+header{
+    width: 100%;
+    height: 10vh;
+    /* border: 1px solid var(--secondary); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--prim_acc);
+}
+
+.header_body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-weight: 700;
+}
+
+/* .header_icon{
+    color: var(--secondary);
+} */
+
+.hero_sec{
+    border: 2px solid var(--secondary);
+    height: 70vh;
+    padding: 2% 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    background-color: var(--sec_acc);
+}
+
+.card1{
+    height: 95% !important;
+    border: 3px solid var(--secondary) !important;
+    overflow-y: auto;
+}
+
+.card1_body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    background-color: var(--prim_acc);
+    color: var(--primary);
+}
+
+.hero_sec video{
+    height: 90%;
+    border: 3px solid var(--secondary);
+    border-radius: 10px;
+}
+
+
+.main_div{
+    margin: 20px;
+    padding: 5px;
+    width: 60%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.main_div_head{
+    height: 10%;
+    width: 100%;
+    border: 2px solid var(--secondary);
+    border-radius: 10px;
+    background-color: var(--sec_acc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_div_body{
+    height: 90%;
+    display: flex;
+    gap: 10px;
+}
+
+.card{
+    min-height: 100%;
+    background-color: var(--sec_acc);
+    width: 50%;
+    padding: 0;
+    border:2px solid var(--secondary);
+}
+
+.card2_body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap:5px ;
+}
+
+#username_input , .comment_name_input{
+    background-color:var(--prim_acc) ;
+    border: 2px solid var(--primary);
+    border-radius: 10px;
+    min-height: 5.8vh;
+    max-width: 100%;
+    margin-bottom: 5px;
+}
+
+textarea{
+    background-color: var(--prim_acc) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    overflow-y: auto;
+    border:2px solid var(--primary);
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+}
+
+.post_button{
+    background-color: var(--prim_acc);
+    border-color: var(--primary);
+    box-shadow: 2px 5px 5px rgb(85, 88, 88);
+    height: 6vh;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.card3_body{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.bg_img_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px 10px;
+}
+
+.bg_img_list img:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 0px 5px #4d4c4b;
+}
+
+#post_sec{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 80%;
+    padding: 0 5%;
+}
+
+.post{
+    width: 70%;
+    max-width: 60vh;
+}
+
+.post_title{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+}
+
+.post_text{
+    height: 40vh;
+    padding: 10px;
+    font-size: larger;
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+    background-size:cover ;
+    background-repeat: no-repeat;
+}
+
+.comment_par_section{
+    height: 20vh;
+    width: 100%;
+    margin-bottom: 12vh;
+}
+
+.com_card{
+    padding: 5px 0;
+    width: 100%;
+    border: 2px solid var(--primary);
+}
+
+.comment-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_control{
+    height: 15vh;
+}
+
+.post_com_btn{
+    background-color: var(--prim_acc);
+    height: 6vh;
+}
+
+.post_btns{
+    display: flex;
+    width: 100%;
+    height: 6vh;
+    border-bottom: 3px solid var(--secondary);
+    border-radius: 5px;
+}
+
+.post_btns button{
+    width: 50%;
+    border: none;
+    background-color: var(--prim_acc);
+    color: var(--primary);
+}
+
+button:hover{
+    background-color: var(--primary) !important;
+    color: var(--prim_acc) !important;
+}
+
+
+#comment_text{
+    height: 10vh !important;
+}
+
+.comments{
+    margin: 2px 0;
+    border-top: 2px solid var(--secondary) !important;
+    border-bottom: 2px solid var(--secondary) !important;
+    border-radius: 5px;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .main_div {
+    width: 90%;
+    height: auto;
+  }
+
+  .main_div_body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .post_text {
+    height: auto;
+    font-size: 1rem;
+    padding: 8px;
+  }
+
+  .hero_sec {
+    flex-direction: column;
+    padding: 5%;
+    height: auto;
+    gap: 20px;
+  }
+
+  .hero_sec video {
+    width: 100%;
+    height: auto;
+  }
+
+  textarea {
+    height: auto !important;
+    font-size: 1rem;
+  }
+
+  .bg_img_list img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .post {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .post_btns {
+    height: 8vh;
+    margin-bottom: -8px;
+  }
+
+  .post_btns button {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .main_div {
+    width: 80%;
+    height: auto;
+  }
+
+  .bg_img_list img {
+    width: 65px;
+    height: 65px;
+  }
+}

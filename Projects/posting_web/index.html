@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--BootStrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!--Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!--Abril Fatface GF-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Tektur GF-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Animate.CSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+
+    <!--Title-->
+    <title>Sparks - Sharing light through words</title>
+  </head>
+  <body>
+    <header>
+      <div class="header_body">
+        <img
+          class="header_icon"
+          src="./assets/header_icon.png"
+          alt="header_icon"
+          width="80px"
+          height="80px"
+        />
+        <h2 class="abril-fatface-sparkle">Sparks</h2>
+      </div>
+    </header>
+
+    <section class="hero_sec">
+      <div class="card card1">
+        <div class="card-body card1_body">
+          <h3 class="card-title abril-fatface-sparkle">
+            <img
+              class="header_icon"
+              src="./assets/header_icon.png"
+              alt="header_icon"
+              width="80px"
+              height="80px"
+            />
+            Sparks
+          </h3>
+          <h6 class="card-subtitle mb-2 text-muted">
+            <i>Sharing light through words</i>
+          </h6>
+          <p
+            class="card-text card1_text animate__animated animate__slideInLeft animate__slower"
+          >
+            "Sparks is where thoughts ignite and ideas shine. A place to share
+            your light through words that inspire, challenge, and connect.
+            Whether a fleeting moment or profound truth, every post adds warmth
+            to the collective glow."
+          </p>
+        </div>
+      </div>
+      <video src="./assets/hero_vid.mp4" autoplay loop muted></video>
+    </section>
+
+    <div class="main_div container">
+      <div class="main_div_head">
+        <h3 class="abril-fatface-sparkle">Post Area</h3>
+      </div>
+      <div class="main_div_body">
+        <div class="card card2">
+          <div class="card-body card2_body">
+            <h5 class="card-title">
+              <img
+                src="./assets/dummy_user_pic.png"
+                alt="user_pic"
+                width="40"
+                height="40"
+              />
+              <input
+                onfocus=""
+                type="text"
+                name="username_input"
+                id="username_input"
+                placeholder="Enter your username"
+              />
+            </h5>
+            <p class="card-text">
+              <textarea
+                name="post_textarea"
+                id="post_textarea"
+                rows="10vh"
+                placeholder="A single spark can start a fire. Share yours and watch the light spread!"
+              ></textarea>
+            </p>
+            <button
+              class="post_button"
+              type="submit"
+              id="post_btn"
+              onclick="create_post()"
+            >
+              <i>Share your light!</i>
+            </button>
+          </div>
+        </div>
+        <div class="card card3">
+          <div class="card-body card3_body">
+            <h5 class="card-title">Choose Your Background</h5>
+            <div class="bg_img_list">
+              <img
+                id="bg_1"
+                onclick="set_bg(event)"
+                src="./assets/bg_1.jpeg"
+                alt="bg_1"
+                width="80"
+                height="80"
+              />
+              <img
+                id="bg_2"
+                onclick="set_bg(event)"
+                src="./assets/bg_2.jpeg"
+                alt="bg_2"
+                width="80"
+                height="80"
+              />
+              <img
+                id="bg_3"
+                onclick="set_bg(event)"
+                src="./assets/bg_3.jpeg"
+                alt="bg_3"
+                width="80"
+                height="80"
+              />
+              <img
+                id="bg_4"
+                onclick="set_bg(event)"
+                src="./assets/bg_4.jpeg"
+                alt="bg_4"
+                width="80"
+                height="80"
+              />
+              <img
+                id="bg_5"
+                onclick="set_bg(event)"
+                src="./assets/bg_5.jpeg"
+                alt="bg_5"
+                width="80"
+                height="80"
+              />
+              <img
+                id="bg_6"
+                onclick="set_bg(event)"
+                src="./assets/bg_6.jpeg"
+                alt="bg_6"
+                width="80"
+                height="80"
+              />
+              <img
+                id="bg_7"
+                onclick="set_bg(event)"
+                src="./assets/bg_7.jpeg"
+                alt="bg_7"
+                width="80"
+                height="80"
+              />
+              <img
+                id="bg_8"
+                onclick="set_bg(event)"
+                src="./assets/bg_8.jpeg"
+                alt="bg_8"
+                width="80"
+                height="80"
+              />
+              <img
+                id="bg_9"
+                onclick="set_bg(event)"
+                src="./assets/bg_9.jpeg"
+                alt="bg_9"
+                width="80"
+                height="80"
+              />
+              <img
+                id="bg_10"
+                onclick="set_bg(event)"
+                src="./assets/bg_10.jpeg"
+                alt="bg_10"
+                width="80"
+                height="80"
+              />
+              <img
+                id="bg_11"
+                onclick="set_bg(event)"
+                src="./assets/bg_11.jpeg"
+                alt="bg_11"
+                width="80"
+                height="80"
+              />
+              <img
+                id="bg_12"
+                onclick="set_bg(event)"
+                src="./assets/bg_12.jpeg"
+                alt="bg_12"
+                width="80"
+                height="80"
+              />
+              <img
+                id="bg_13"
+                onclick="set_bg(event)"
+                src="./assets/bg_13.jpeg"
+                alt="bg_13"
+                width="80"
+                height="80"
+              />
+              <img
+                id="bg_14"
+                onclick="set_bg(event)"
+                src="./assets/bg_14.jpeg"
+                alt="bg_14"
+                width="80"
+                height="80"
+              />
+              <img
+                id="bg_15"
+                onclick="set_bg(event)"
+                src="./assets/bg_15.jpeg"
+                alt="bg_15"
+                width="80"
+                height="80"
+              />
+              <img
+                id="bg_16"
+                onclick="set_bg(event)"
+                src="./assets/bg_16.jpeg"
+                alt="bg_16"
+                width="80"
+                height="80"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="post_sec"></section>
+
+    <!--HTML END-->
+
+    <!--Scripts-->
+    <!--Bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Vanilla JS-->
+    <script src="./script.js"></script>
+  </body>
+</html>
